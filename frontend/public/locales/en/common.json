@@ -1,0 +1,26 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": {
+      "title": "Welcome to Our Company Portfolio",
+      "description": "Discover our work and services"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn more about our company"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Explore what we offer"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with us"
+    }
+  }
+} 
