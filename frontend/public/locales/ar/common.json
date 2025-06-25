@@ -1,26 +1,99 @@
 {
   "navigation": {
+    "home": "",
+    "about": "",
+    "services": "",
+    "contact": "",
+    "careers": "",
+    "faq": "",
+    "privacy": "",
+    "terms": "",
+    "legal": ""
+  },
+  "pages": {
+    "home": {
+      "title": "مرحباً بكم في موقع الشركة",
+      "description": "اكتشف أعمالنا وخدماتنا",
+      "hero": {
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "cta": "",
+        "contactCta": ""
+      }
+    },
+    "about": {
+      "title": "من نحن",
+      "description": "تعرف أكثر على شركتنا",
+      "sections": {
+        "mission": {
+          "title": "",
+          "description": ""
+        },
+        "vision": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    "services": {
+      "title": "خدماتنا",
+      "description": "استكشف ما نقدمه",
+      "categories": {
+        "security": {
+          "title": "",
+          "description": ""
+        },
+        "digital": {
+          "title": "",
+          "description": ""
+        },
+        "engagement": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "description": "هل لديك سؤال، طلب عرض سعر، أو ترغب في التعاون؟",
+      "info": {
+        "address": "العراق - بغداد - المأمون - محلة 601",
+        "phone": [
+          "+964 770 111 1112",
+          "+964 787 577 5774"
+        ],
+        "email": {
+          "general": "info@al-watad.iq",
+          "careers": "careers@al-watad.iq"
+        },
+        "working_hours": "السبت إلى الخميس: 8:00 صباحاً - 4:00 مساءً"
+      },
+      "form": {
+        "name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "message": "الرسالة",
+        "submit": "إرسال الرسالة"
+      }
+    }
+  },
+  "hero": {
+    "title": "تحويل الأفكار إلى واقع رقمي",
+    "description": "نحن متخصصون في إنشاء حلول رقمية مبتكرة تساعد الشركات على الازدهار في العالم الحديث. يقدم فريقنا المتخصص تقنيات متطورة مع التركيز على الجودة وتجربة المستخدم.",
+    "primaryCTA": "ابدأ الآن",
+    "secondaryCTA": "اعرف المزيد"
+  },
+  "nav": {
     "home": "الرئيسية",
     "about": "من نحن",
     "services": "خدماتنا",
     "contact": "اتصل بنا"
   },
-  "pages": {
-    "home": {
-      "title": "مرحباً بكم في موقع الشركة",
-      "description": "اكتشف أعمالنا وخدماتنا"
-    },
-    "about": {
-      "title": "من نحن",
-      "description": "تعرف أكثر على شركتنا"
-    },
-    "services": {
-      "title": "خدماتنا",
-      "description": "استكشف ما نقدمه"
-    },
-    "contact": {
-      "title": "اتصل بنا",
-      "description": "تواصل معنا"
-    }
+  "common": {
+    "readMore": "",
+    "learnMore": "",
+    "contactUs": "",
+    "getStarted": ""
   }
 } 

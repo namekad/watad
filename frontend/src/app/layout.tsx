@@ -1,12 +1,11 @@
 "use client";
 
-import { Inter } from "next/font/google";
+import { usePathname } from "next/navigation";
+import { LazyMotion, domAnimation } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { usePathname } from "next/navigation";
+import { inter, poppins, cairo } from "./fonts";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -19,13 +18,19 @@ export default function RootLayout({
   const isRTL = pathname.startsWith("/ar");
 
   return (
-    <html lang={isRTL ? "ar" : "en"} dir={isRTL ? "rtl" : "ltr"}>
-      <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-grow container mx-auto">{children}</main>
-          <Footer />
-        </div>
+    <html
+      lang={isRTL ? "ar" : "en"}
+      dir={isRTL ? "rtl" : "ltr"}
+      className={`${inter.variable} ${poppins.variable} ${cairo.variable}`}
+    >
+      <body>
+        <LazyMotion features={domAnimation}>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+        </LazyMotion>
       </body>
     </html>
   );

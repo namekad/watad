@@ -1,10 +1,28 @@
-export default function HomePage() {
+import Hero from "@/components/Hero";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("pages.home");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function Home() {
+  const t = await getTranslations("pages.home.hero");
+
+  const heroTranslations = {
+    title: t("title"),
+    description: t("description"),
+    primaryCTA: t("cta"),
+    secondaryCTA: t("contactCta"),
+  };
+
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold mb-4">
-        Welcome to Our Company Portfolio
-      </h1>
-      <p className="text-lg">Discover our work and services</p>
-    </div>
+    <main>
+      <Hero translations={heroTranslations} />
+      {/* Other sections will be added here */}
+    </main>
   );
 }

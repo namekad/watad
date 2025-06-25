@@ -1,61 +1,60 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Logo from "@/components/shared/Logo";
+import LanguageSwitcher from "@/components/shared/LanguageSwitcher";
+import MobileMenu from "./MobileMenu";
 
-const Header = () => {
+const navigation = [
+  { name: { en: "Home", ar: "الرئيسية" }, href: "/" },
+  { name: { en: "About", ar: "من نحن" }, href: "/about" },
+  { name: { en: "Services", ar: "خدماتنا" }, href: "/services" },
+  { name: { en: "Contact", ar: "اتصل بنا" }, href: "/contact" },
+] as const;
+
+export default function Header() {
   const pathname = usePathname();
-  const router = useRouter();
   const currentLocale = pathname.split("/")[1];
 
-  const navigation = [
-    { name: { en: "Home", ar: "الرئيسية" }, href: "/" },
-    { name: { en: "About", ar: "من نحن" }, href: "/about" },
-    { name: { en: "Services", ar: "خدماتنا" }, href: "/services" },
-    { name: { en: "Contact", ar: "اتصل بنا" }, href: "/contact" },
-  ];
-
-  const toggleLanguage = (newLocale: string) => {
-    const currentPath = pathname.split("/").slice(2).join("/");
-    router.push(`/${newLocale}/${currentPath}`);
-  };
-
   return (
-    <header className="w-full py-4 border-b">
-      <nav className="container mx-auto flex justify-between items-center">
-        <ul className="flex gap-4">
-          {navigation.map((item) => (
-            <li key={item.name[currentLocale as keyof typeof item.name]}>
-              <Link
-                href={`/${currentLocale}${item.href}`}
-                className="hover:text-blue-600 transition-colors"
-              >
-                {item.name[currentLocale as keyof typeof item.name]}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="language-switcher flex gap-2">
-          <button
-            onClick={() => toggleLanguage("en")}
-            className={`px-2 py-1 rounded ${
-              currentLocale === "en" ? "bg-blue-600 text-white" : "bg-gray-200"
-            }`}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => toggleLanguage("ar")}
-            className={`px-2 py-1 rounded ${
-              currentLocale === "ar" ? "bg-blue-600 text-white" : "bg-gray-200"
-            }`}
-          >
-            AR
-          </button>
-        </div>
-      </nav>
+    <header className="w-full py-3 md:py-4 border-b bg-white dark:bg-secondary-900 relative z-50">
+      <div className="container mx-auto px-4">
+        <nav className="flex items-center justify-between gap-4">
+          {/* Logo */}
+          <Logo className="flex-shrink-0" />
+
+          {/* Mobile Menu */}
+          <MobileMenu
+            navigation={navigation}
+            currentLocale={currentLocale}
+            pathname={pathname}
+          />
+
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex items-center gap-8 flex-1 justify-center">
+            {navigation.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={`/${currentLocale}${item.href}`}
+                  className={`text-sm font-medium hover:text-primary-600 transition-colors ${
+                    pathname === `/${currentLocale}${item.href}`
+                      ? "text-primary-600"
+                      : "text-secondary-600 dark:text-secondary-300"
+                  }`}
+                >
+                  {item.name[currentLocale as keyof typeof item.name]}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Language Switcher */}
+          <div className="flex-shrink-0">
+            <LanguageSwitcher />
+          </div>
+        </nav>
+      </div>
     </header>
   );
-};
-
-export default Header;
+}

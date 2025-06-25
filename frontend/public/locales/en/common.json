@@ -3,24 +3,192 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "careers": "Careers",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "legal": "Legal"
   },
   "pages": {
     "home": {
       "title": "Welcome to Our Company Portfolio",
-      "description": "Discover our work and services"
+      "description": "Discover our work and services",
+      "hero": {
+        "title": "Al-Watad – A Distinctive Iraqi Tech Brand",
+        "subtitle": "From securing your data… to managing your digital presence — everything starts here",
+        "description": "Whether you're seeking to secure your data, elevate your digital image, or build stronger engagement with your audience — Al-Watad is ready to be your trusted technology partner",
+        "cta": "Let's Be Your Digital Transformation Partner",
+        "contactCta": "Contact us today — take the next step with confidence"
+      }
     },
     "about": {
-      "title": "About Us",
-      "description": "Learn more about our company"
+      "title": "About Al-Watad",
+      "intro": "Al-Watad is an Iraqi company specialized in delivering smart, integrated solutions across information systems, internet technologies, cybersecurity, social media management, and digital infrastructure services.",
+      "main_description": "We operate through expert teams and skilled local professionals, working in collaboration with world-class technology partners. Our mission is to provide high-quality, future-ready services that empower our clients—both in the public and private sectors—to strengthen their digital presence, protect their technical environment, and grow with confidence in an ever-evolving digital world.",
+      "services_title": "What We Offer",
+      "services_list": [
+        "Reliable enterprise internet and communication services",
+        "Strategic planning and execution of digital marketing campaigns across all platforms",
+        "End-to-end cybersecurity solutions and compliance auditing",
+        "24/7 technical support and managed services",
+        "Customized digital transformation and automation solutions"
+      ]
     },
     "services": {
       "title": "Our Services",
-      "description": "Explore what we offer"
+      "description": "Empowering your digital journey with comprehensive solutions",
+      "sections": {
+        "telecom": {
+          "title": "Telecommunication & Internet Services",
+          "icon": "network",
+          "intro": "Telecommunication and internet services form the core infrastructure of modern life and business operations. They support essential daily needs such as communication, email, banking, healthcare, e-learning, marketing, and more.",
+          "description": "Al-Watad provides high-speed, reliable, and geographically extensive telecommunication and internet services tailored to meet the needs of clients across various sectors throughout all Iraqi provinces.",
+          "features": [
+            {
+              "title": "Dedicated Internet Access (DIA)",
+              "points": [
+                "Flexible bandwidth with high-speed, dedicated, and secure connections",
+                "Quality of Service (QoS) protocol support",
+                "Stable connectivity and fully managed services 24/7"
+              ]
+            },
+            {
+              "title": "Enterprise Connectivity",
+              "points": [
+                "Unified branch connectivity through MPLS technology",
+                "SD-WAN solutions for enhanced efficiency",
+                "Centralized data traffic management"
+              ]
+            },
+            {
+              "title": "24/7 Technical Support",
+              "points": [
+                "Network monitoring and incident response",
+                "Immediate failure resolution",
+                "Regular performance optimization"
+              ]
+            }
+          ]
+        },
+        "social": {
+          "title": "Social Media Management",
+          "icon": "social",
+          "intro": "With the rapid evolution of technology and social media networks, establishing a strong digital presence is essential for effective promotion and profitability.",
+          "features": [
+            {
+              "title": "Strategic Planning",
+              "points": [
+                "Comprehensive marketing strategy development",
+                "Content calendar planning",
+                "Performance tracking and analytics"
+              ]
+            },
+            {
+              "title": "Content Creation",
+              "points": [
+                "Professional graphic design",
+                "Video production",
+                "Engaging copywriting"
+              ]
+            },
+            {
+              "title": "Campaign Management",
+              "points": [
+                "Paid advertising campaigns",
+                "Performance optimization",
+                "ROI tracking"
+              ]
+            }
+          ]
+        },
+        "cyber": {
+          "title": "Cybersecurity Solutions",
+          "icon": "shield",
+          "intro": "Protect your digital assets with our comprehensive cybersecurity solutions, designed to safeguard your organization against evolving threats.",
+          "features": [
+            {
+              "title": "Threat Detection",
+              "points": [
+                "24/7 security monitoring",
+                "Vulnerability assessments",
+                "Incident response"
+              ]
+            },
+            {
+              "title": "Security Consulting",
+              "points": [
+                "Security architecture design",
+                "Policy development",
+                "Staff training"
+              ]
+            },
+            {
+              "title": "Compliance",
+              "points": [
+                "Regular security audits",
+                "Compliance monitoring",
+                "Risk assessment"
+              ]
+            }
+          ]
+        }
+      },
+      "categories": {
+        "security": {
+          "title": "Data Security",
+          "description": "Protecting your digital assets with advanced security solutions"
+        },
+        "digital": {
+          "title": "Digital Presence",
+          "description": "Building and managing your online presence effectively"
+        },
+        "engagement": {
+          "title": "Audience Engagement",
+          "description": "Creating meaningful connections with your target audience"
+        }
+      }
     },
     "contact": {
       "title": "Contact Us",
-      "description": "Get in touch with us"
+      "description": "Do you have a question, a request for a quote, or are you looking to collaborate?",
+      "info": {
+        "address": "Iraq – Baghdad – Al-Mamoun – District 601",
+        "phone": [
+          "+964 770 111 1112",
+          "+964 787 577 5774"
+        ],
+        "email": {
+          "general": "info@al-watad.iq",
+          "careers": "careers@al-watad.iq"
+        },
+        "working_hours": "Saturday to Thursday: 8:00 AM – 4:00 PM"
+      },
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "message": "Message",
+        "submit": "Send Message"
+      }
     }
+  },
+  "hero": {
+    "title": "Transforming Ideas into Digital Reality",
+    "description": "We specialize in creating innovative digital solutions that help businesses thrive in the modern world. Our expert team delivers cutting-edge technology with a focus on quality and user experience.",
+    "primaryCTA": "Get Started",
+    "secondaryCTA": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "getStarted": "Get Started"
   }
 } 

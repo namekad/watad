@@ -1,8 +1,22 @@
-export default function ServicesPage() {
+import { getTranslations } from "next-intl/server";
+import Services from "@/components/Services";
+
+export async function generateMetadata() {
+  const t = await getTranslations("pages.services");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function ServicesPage() {
+  const t = await getTranslations("pages.services");
+
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-      <p className="text-lg">Explore what we offer</p>
-    </div>
+    <Services
+      title={t("title")}
+      description={t("description")}
+      sections={t.raw("sections")}
+    />
   );
 }
