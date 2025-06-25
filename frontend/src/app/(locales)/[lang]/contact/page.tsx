@@ -1,8 +1,16 @@
 import Contact from "@/components/Contact";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function ContactPage() {
-  const t = useTranslations("pages.contact");
+export async function generateMetadata() {
+  const t = await getTranslations("pages.contact");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function ContactPage() {
+  const t = await getTranslations("pages.contact");
 
   const contactContent = {
     title: t("title"),
