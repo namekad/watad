@@ -19,6 +19,6 @@ export default createMiddleware({
 });
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+  // Matcher ignoring `/_next/`, `/api/`, image files, and well-known paths
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|\\.well-known).*)']
 }; 

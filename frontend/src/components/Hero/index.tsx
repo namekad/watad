@@ -65,7 +65,7 @@ export default function Hero({ translations }: HeroProps) {
                 className="relative w-full max-w-lg"
               >
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/img1.jpg"
                   alt="Hero Image"
                   width={600}
                   height={600}
