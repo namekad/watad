@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Welcome to Our Company",
+    "subtitle": "Building the Future Together",
+    "description": "We specialize in innovative solutions that transform businesses."
+  },
+  "about": {
+    "title": "About Us",
+    "content": "We are a forward-thinking company dedicated to excellence.",
+    "mission": "Our mission is to deliver exceptional value to our clients."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Digital Transformation",
+        "description": "Helping businesses embrace the digital age."
+      },
+      {
+        "title": "Custom Solutions",
+        "description": "Tailored solutions for your unique needs."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "contact@example.com",
+    "phone": "+1 234 567 8900",
+    "address": "123 Business Street, City, Country"
+  }
+} 

@@ -23,7 +23,7 @@
       }
     },
     "about": {
-      "title": "About Al-Watad",
+      "title": "About Al-Watad ",
       "intro": "Al-Watad is an Iraqi company specialized in delivering smart, integrated solutions across information systems, internet technologies, cybersecurity, social media management, and digital infrastructure services.",
       "main_description": "We operate through expert teams and skilled local professionals, working in collaboration with world-class technology partners. Our mission is to provide high-quality, future-ready services that empower our clients—both in the public and private sectors—to strengthen their digital presence, protect their technical environment, and grow with confidence in an ever-evolving digital world.",
       "services_title": "What We Offer",
@@ -273,4 +273,4 @@
       ]
     }
   }
-} 
+}
